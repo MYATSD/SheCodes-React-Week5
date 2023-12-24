@@ -82,7 +82,7 @@ const Weather = (props) => {
 
     </div>
     <div className='text-center'>
-      <p className=''>This project was coded by <a href='https://github.com/MYATSD/' className='text-yellow-600 underline'>Hsu Myat Sandi Aung</a> and is <a href="https://github.com/MYATSD/SheCodes-React-Week5" className='text-yellow-600 underline'>open source on Github</a> and <a href="/" className='text-yellow-600 underline'>hosted on netlify</a> </p>
+      <p className=''>This project was coded by <a href='https://github.com/MYATSD/' className='text-yellow-600 underline'>Hsu Myat Sandi Aung</a> and is <a href="https://github.com/MYATSD/SheCodes-React-Week5" className='text-yellow-600 underline'>open source on Github</a> and <a href="https://bespoke-heliotrope-62a540.netlify.app/" className='text-yellow-600 underline'>hosted on netlify</a> </p>
 
       </div>
 
