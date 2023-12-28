@@ -10,6 +10,7 @@
     "axios": "^1.6.2",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.2",
+    "eslint-plugin-react-hooks": "^5.0.0-canary-c5b937576-20231219",
     "react": "^18.2.0",
     "react-animated-weather": "^4.0.1",
     "react-bootstrap-icons": "^1.10.3",
@@ -28,6 +29,9 @@
       "react-app",
       "react-app/jest"
     ]
+    
+   
+ 
   },
   "browserslist": {
     "production": [

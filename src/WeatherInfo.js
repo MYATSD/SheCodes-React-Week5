@@ -23,7 +23,7 @@ const WeatherInfo = (props) => {
         </ul>
       </div>
       <div className="w-[400px] flex flex-start ">
-        <WeatherIcon icon={props.data.Icon} />
+        <WeatherIcon icon={props.data.Icon} size={'64px'} />
         <WeatherTemperature temp={props.data.Temperature} />
       </div>
     </div>

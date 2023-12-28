@@ -2,7 +2,7 @@ import React from 'react'
 
 const FormatDate = ({date}) => {
    
-   let days = ["Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday" , "Sunday"]
+   let days = ["Sunday", "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday" ]
    
       console.log(date)
      let dt = new Date(date *1000)

@@ -2,6 +2,7 @@ import React from "react";
 import axios from 'axios';
 import { useState } from 'react';
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 
 const Weather = (props) => {
@@ -11,10 +12,12 @@ const Weather = (props) => {
 
 
   })
+  const onChange = (value) => { console.log(value); }
   const [city,setCity] = useState( props.defaultCity)
   const todayWeather =(response)=>{
    
     setWeatherData({
+      Coord: response.data.coord,
       City: response.data.name,
       Humidity : response.data.main.humidity,
       Temperature: response.data.main.temp,
@@ -31,10 +34,10 @@ const Weather = (props) => {
 
     })
    console.log(response)
-   console.log( new Date(response.data.dt * 1000),
-   )
+   
 
   }
+ 
  const search=() =>{
   const Appid = 'f6c2990f3929b0780a59af13d1fba8f9'
   const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${Appid}`
@@ -52,7 +55,7 @@ const Weather = (props) => {
       return(
         <div>
           
-        <div className="App container border bg-amber-200 shadow w-[800px] h-[350px] mx-auto mt-10 m-5 rounded p-5 ">
+        <div className="App container border bg-amber-200 shadow w-[800px] max-h-[500px] mx-auto mt-10 m-5 rounded p-5 ">
       <a href="https://www.shecodes.io/">
         <img
           src="https://www.weather.shecodes.io/images/logo.png"
@@ -78,6 +81,8 @@ const Weather = (props) => {
         </form>
 
        <WeatherInfo  data={weatherData} />
+
+      <WeatherForecast data={weatherData} onChange={onChange}/>
       </div>
 
     </div>
