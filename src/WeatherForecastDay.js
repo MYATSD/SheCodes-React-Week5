@@ -2,9 +2,9 @@ import React from 'react'
 import WeatherIcon from './WeatherIcon';
 
 const WeatherForecastDay = (props) => {
-     console.log(props.data)
+    //  console.log(props.data)
      const data = props.data
-     console.log(data)
+    //  console.log(data)
 
 
      return(

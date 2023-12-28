@@ -23,7 +23,7 @@ const WeatherIcon = (props) => {
         "50n": "FOG",
     
     }
-    console.log(props.icon)
+    // console.log(props.icon)
   return (
     <div>
        <ReactAnimatedWeather
